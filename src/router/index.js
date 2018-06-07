@@ -10,6 +10,9 @@ import SubMenu from '@/components/layout/submenu'
 import Numbers from '@/components/number/number'
 import Counter from '@/components/number/counter'
 import SlotBase from '@/components/slot/slotBase'
+import FormBase from '@/components/formBase/formBase'
+import PropertyWatch from '@/components/propertyWatch/propertyWatch'
+import ClassStyle from '@/components/classStyle/classStyle'
 
 Vue.component('SubMenu',SubMenu)
 Vue.component('CountMapState',CountMapState)
@@ -19,6 +22,9 @@ Vue.component('CountMapActions',CountMapActions)
 Vue.component('Numbers',Numbers)
 Vue.component('Counter',Counter)
 Vue.component('SlotBase',SlotBase)
+Vue.component('FormBase',FormBase)
+Vue.component('PropertyWatch',PropertyWatch)
+Vue.component('ClassStyle',ClassStyle)
 
 Vue.use(Router)
 export default new Router({
@@ -66,6 +72,19 @@ export default new Router({
       path: '/slot/slotBase',
       name: 'SlotBase',
       component: SlotBase
-    }
+    },
+    {
+      path: '/formBase/formBase',
+      name: 'FormBase',
+      component: FormBase
+    },{
+      path: '/propertyWatch/propertyWatch',
+      name: 'PropertyWatch',
+      component: PropertyWatch
+    },{
+      path: '/classStyle/classStyle',
+      name: 'ClassStyle',
+      component: ClassStyle
+    },
   ]
 })

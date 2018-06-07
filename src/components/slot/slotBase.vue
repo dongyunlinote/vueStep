@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Sub-Menu postTitle="SlotBase"></Sub-Menu>
+		slot base
 	</div>
 </template>
 <script>

@@ -1,6 +1,5 @@
 <template>
     <div  class="part">
-        <Sub-Menu postTitle="mapGetters"></Sub-Menu>
         <!-- CountMapGetters -->
         <h3><!-- {{$store.state.count}}  --> {{count}}</h3>
         <!-- <button @click="$store.commit('add')">+</button> -->

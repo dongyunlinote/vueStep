@@ -1,6 +1,5 @@
 <template>
 	<div  class="part">
-        <Sub-Menu :postTitle="mapState"></Sub-Menu>
         <!-- CountMapState -->
         <!-- <h3>{{$store.state.count}}</h3> -->
         <h3>{{count}}</h3>
