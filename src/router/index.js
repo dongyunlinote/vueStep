@@ -9,10 +9,13 @@ import CountMapActions from '@/components/storeCount/CountMapActions'
 import SubMenu from '@/components/layout/submenu'
 import Numbers from '@/components/number/number'
 import Counter from '@/components/number/counter'
-import SlotBase from '@/components/slot/slotBase'
+import Slots from '@/components/slot/slots'
 import FormBase from '@/components/formBase/formBase'
 import PropertyWatch from '@/components/propertyWatch/propertyWatch'
 import ClassStyle from '@/components/classStyle/classStyle'
+import SoltVueOne from '@/components/slot/soltsOne'
+import SoltVueTwo from '@/components/slot/soltsTwo'
+import SoltVueThree from '@/components/slot/soltsThree'
 
 Vue.component('SubMenu',SubMenu)
 Vue.component('CountMapState',CountMapState)
@@ -21,10 +24,13 @@ Vue.component('CountMapGetters',CountMapGetters)
 Vue.component('CountMapActions',CountMapActions)
 Vue.component('Numbers',Numbers)
 Vue.component('Counter',Counter)
-Vue.component('SlotBase',SlotBase)
+Vue.component('Slots',Slots)
 Vue.component('FormBase',FormBase)
 Vue.component('PropertyWatch',PropertyWatch)
 Vue.component('ClassStyle',ClassStyle)
+Vue.component('SoltVueOne',SoltVueOne)
+Vue.component('SoltVueTwo',SoltVueTwo)
+Vue.component('SoltVueThree',SoltVueThree)
 
 Vue.use(Router)
 export default new Router({
@@ -32,6 +38,7 @@ export default new Router({
     {
       redirect: '/storeCount/Count',
       path: '/',
+      meta:{ title: "aaa"}
     },
     {
       path: '/storeCount/Count',
@@ -69,9 +76,9 @@ export default new Router({
       component: Numbers
     },
     {
-      path: '/slot/slotBase',
-      name: 'SlotBase',
-      component: SlotBase
+      path: '/slot/slots',
+      name: 'Slots',
+      component: Slots
     },
     {
       path: '/formBase/formBase',

@@ -1,6 +1,7 @@
 <template>
-	<div>
+	<div class="main">
 		<div>cssStyle</div>
+		<div @click="thens"></div>
 	</div>
 </template>
 
@@ -12,6 +13,15 @@ export default{
 		}
 	},
 	methods:{
+		thens:function(){
+			this.$axios.get('https://api.myjson.com/bins/8gdmr')
+			.then(res=>{
+				console.log(res);
+			})
+			.catch(function(err) {
+			  console.log(err);
+			});
+		}
 	}
 }
 </script>

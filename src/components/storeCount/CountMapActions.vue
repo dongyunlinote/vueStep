@@ -1,5 +1,5 @@
 <template>
-    <div class="part">
+    <div class="main">
         <!-- CountMapActions -->
         <h3><!-- {{$store.state.count}} -->  {{count}}</h3>
         <!-- <button @click="$store.commit('add')">+</button> -->

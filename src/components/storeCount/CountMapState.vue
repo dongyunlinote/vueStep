@@ -1,5 +1,5 @@
 <template>
-	<div  class="part">
+	<div  class="main">
         <!-- CountMapState -->
         <!-- <h3>{{$store.state.count}}</h3> -->
         <h3>{{count}}</h3>

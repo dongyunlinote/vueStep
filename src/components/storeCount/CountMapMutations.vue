@@ -1,9 +1,9 @@
 <template>
-    <div  class="part">
+    <div  class="main">
         <!-- CountMapMutations -->
         <h3><!-- {{$store.state.count}} -->  {{count}}</h3>
-        <!-- <button @click="$store.commit('add')">+</button> -->
-        <!-- <button @click="$store.commit('reduce')">-</button> -->
+        <button @click="$store.commit('add')">+</button>
+        <button @click="$store.commit('reduce')">-</button>
         <button @click="add">+</button>
         <button @click="reduce">-</button>
     </div>
